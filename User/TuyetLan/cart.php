@@ -71,7 +71,7 @@ include 'funtion.php';
         }
     }
     // tải lại trang sau khi thêm sản phẩm.
-    header("Location: http://localhost/website_noi_that/User/TuyetLan/cart.php");
+    header("Location: ../TuyetLan/cart.php");
     exit;
 
 
@@ -181,7 +181,7 @@ include 'funtion.php';
             "ID": ID,
             "numbe": numbe
         }, function(data) {
-            $("#listcart").load("http://localhost/website_noi_that/User/TuyetLan/cart.php #cartx");
+            $("#listcart").load("../TuyetLan/cart.php #cartx");
         });
 
         window.location.reload();
@@ -193,7 +193,7 @@ include 'funtion.php';
             "numbe": 0
         }, function(data) {
             //afterupdate cart
-            $("#listcart").load("http://localhost/website_noi_that/User/TuyetLan/cart.php #cartx");
+            $("#listcart").load("../TuyetLan/cart.php #cartx");
         });
         window.location.reload();
     }
